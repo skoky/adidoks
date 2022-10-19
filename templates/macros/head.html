@@ -59,7 +59,7 @@
 {% endif %}
 <title>{{ title ~ title_addition }}</title>
 <meta name="description" content="{{ description }}">
-<link rel="canonical" href="{{ page_url | safe }}">
+<link href="{{ page_url | safe }}">
 
 {% if config.extra.open.enable %}
   <meta name="twitter:card" content="summary_large_image">
