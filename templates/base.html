@@ -9,6 +9,7 @@
 {% import 'macros/docs-edit-page.html' as macros_edit_page -%}
 {% import 'macros/docs-navigation.html' as macros_navigation -%}
 {% import 'macros/docs-toc.html' as macros_toc -%}
+{% import 'macros/ga.html' as macros_ga -%}
 <!DOCTYPE html>
 <html lang="{{ config.extra.language_code | default(value="en-US") }}">
 <head>
@@ -27,6 +28,7 @@
 {% endblock seo %}
 
 {{ macros_head::favicons() }}
+{{ macros_ga::ga() }}
 {% block math %}{{ macros_math::math() }}{% endblock math %}
 </head>
 {% block body %}{% set page_class="home" %}{% endblock body %}
