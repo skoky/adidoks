@@ -33,6 +33,7 @@
         <div class="col-lg-9 col-xl-8 text-center">
           <p class="lead">{{ section.extra.lead | default(value="Please start setting config.toml and adding your content.") | safe }}</p>
           <a class="btn btn-primary btn-lg px-4 mb-2" href="{{ section.extra.url | safe }}" role="button">{{ section.extra.url_button | default(value="Get started") }}</a>
+          <p><a href={{ section.extra.lead_below_url }}>{{ section.extra.lead_below }}</a></p>
         </div>
       </div>
     </section>
